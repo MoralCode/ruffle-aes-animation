@@ -9,10 +9,9 @@ const defaultConfig = {
 	"forceScale": true,
 	"forceAlign": true,
 };
-const defaultSWF = 'logo-anim.swf';
 const urlParams = new URLSearchParams(window.location.search);
-const swfName = urlParams.get('swf') || defaultSWF;
-urlParams.delete('swf'); // Not part of Ruffle config object
+const swfName = "Rijndael_Animation_v4_eng.swf";
+// urlParams.delete('swf'); // Not part of Ruffle config object
 window.RufflePlayer = window.RufflePlayer || {};
 window.RufflePlayer.config = defaultConfig;
 for (opt of urlParams.keys()) {
